@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"modifier_sets_animation_atlas_", frames: [[0,3076,70,70],[0,1538,2048,1536],[0,0,2048,1536]]}
+		{name:"modifier_sets_animation_atlas_", frames: [[0,3076,70,70],[0,0,2048,1536],[0,1538,2048,1536]]}
 ];
 
 
@@ -115,7 +115,8 @@ p.nominalBounds = new cjs.Rectangle(0,0,70,70);
 		
 		function fl_ClickToGoToAndPlayFromFrame()
 		{
-			this.gotoAndPlay(this.currentFrame + 1);
+			//this.gotoAndPlay(this.currentFrame + 1);
+			this.gotoAndPlay(2);
 		
 		}
 		this.stop();
@@ -132,7 +133,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,70,70);
 	this.btn1.setTransform(158,383.6,1.221,7.701,0,0,0,124.5,28.5);
 	this.btn1.alpha = 0.012;
 
-	this.timeline.addTween(cjs.Tween.get(this.btn1).to({_off:true},1).wait(43));
+	this.timeline.addTween(cjs.Tween.get(this.btn1).wait(44));
 
 	// Layer_9
 	this.instance = new lib.loader("synched",0);
@@ -205,7 +206,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/modifier_sets_animation_atlas_.png?1527165624936", id:"modifier_sets_animation_atlas_"}
+		{src:"images/modifier_sets_animation_atlas_.png?1527165818760", id:"modifier_sets_animation_atlas_"}
 	],
 	preloads: []
 };
