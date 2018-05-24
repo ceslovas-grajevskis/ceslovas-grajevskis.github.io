@@ -132,13 +132,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,70,70);
 	this.btn1.setTransform(158,383.6,1.221,7.701,0,0,0,124.5,28.5);
 	this.btn1.alpha = 0.012;
 
-	this.btn2 = new lib.fh();
-	this.btn2.name = "btn2";
-	this.btn2.parent = this;
-	this.btn2.setTransform(158,383.6,1.221,7.701,0,0,0,124.5,28.5);
-	this.btn2.alpha = 0.012;
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btn1}]}).to({state:[{t:this.btn2}]},40).wait(4));
+	this.timeline.addTween(cjs.Tween.get(this.btn1).to({_off:true},1).wait(43));
 
 	// Layer_9
 	this.instance = new lib.loader("synched",0);
@@ -211,7 +205,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/modifier_sets_animation_atlas_.png?1527164222221", id:"modifier_sets_animation_atlas_"}
+		{src:"images/modifier_sets_animation_atlas_.png?1527165624936", id:"modifier_sets_animation_atlas_"}
 	],
 	preloads: []
 };
