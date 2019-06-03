@@ -206,7 +206,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/modifier_sets_animation_atlas_.png?1527165818760", id:"modifier_sets_animation_atlas_"}
+		{src:"images/modifier_sets_animation_atlas_.png?1527166151766", id:"modifier_sets_animation_atlas_"}
 	],
 	preloads: []
 };
